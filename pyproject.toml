@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "envio-email"
+version = "0.1.0"
+description = ""
+authors = ["José Antônio Sousa da Silva <tony@arpiatecnologia.com.br>"]
+readme = "README.md"
+packages = [{include = "envio_email", from = "src"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+python-dotenv = "^0.21.0"
+
+
+[tool.poetry.group.dev.dependencies]
+flake8 = "^6.0.0"
+mypy = "^0.991"
+autopep8 = "^2.0.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
